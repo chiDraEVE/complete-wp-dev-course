@@ -1,0 +1,27 @@
+/vendor/
+/composer.lock
+/.idea/
+
+# Ignore everything in the root directory
+/*
+!.gitignore
+!static/
+idea/
+
+# Exclude the wp-content directory
+!/wp-content/
+/wp-content/*
+!/wp-content/themes
+!/wp-content/plugins
+
+# Exclude specific themes in wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/udemy-course-theme/
+
+# Exclude specific plugins in wp-content/plugins
+/wp-content/plugins/*
+!/wp-content/plugins/your-plugin/
+
+# Exclude node_modules and vendor directories
+node_modules/
+vendor/
