@@ -5,6 +5,7 @@
 # Ignore everything in the root directory
 /*
 !.gitignore
+!*.sql
 !static/
 idea/
 
