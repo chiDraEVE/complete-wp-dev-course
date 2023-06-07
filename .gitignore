@@ -6,7 +6,8 @@
 /*
 !.gitignore
 !*.sql
-!static/
+!test.php
+!assets/
 idea/
 
 # Exclude the wp-content directory
