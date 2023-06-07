@@ -2,10 +2,11 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
+    "appearanceTools": true,
     "color": {
       "defaultPalette": false,
       "palette": [
-        { "slug": "u-white", "color": "rgb(255,255,255)", "name":  "udemy-white"},
+        { "slug": "u-white", "color": "rgb(255,255,255)", "name": "Udemy White" },
         { "slug": "u-gray-100", "color": "rgb(243 244 246)", "name": "Udemy Gray 100" },
         { "slug": "u-gray-200", "color": "rgb(229 231 235)", "name": "Udemy Gray 200" },
         { "slug": "u-gray-300", "color": "rgb(209 213 219)", "name": "Udemy Gray 300" },
@@ -27,7 +28,7 @@
       "link": true,
       "custom": true,
       "duotone": [
-        { "slug":  "u-pink-sunset", "colors": ["#11245e", "#dc4379"], "name": "Udemy Pink Sunset"}
+        { "slug": "u-pink-sunset", "colors": ["#11245e", "#dc4379"], "name": "Udemy Pink Sunset" }
       ],
       "defaultGradients": false,
       "gradients": [
@@ -43,12 +44,21 @@
         "color": {
           "defaultPalette": true,
           "palette": [
-            { "slug": "u-primary", "color":  "#ef4444", "name":  "Udemy Primary"}
+            { "slug": "u-primary", "color": "#ef4444", "name": "Udemy Primary" }
           ],
           "link": true,
           "custom": false,
           "gradients": [],
           "customGradient": false
+        },
+        "typography": {
+          "fontFamilies": [
+            { 
+              "fontFamily": "Pacifico, sans-serif", 
+              "slug": "u-pacifico",
+              "name": "Udemy Pacifico" 
+            }
+          ]
         }
       },
       "core/cover": {
@@ -56,7 +66,120 @@
           "duotone": [],
           "customDuotone": false
         }
+      },
+      "core/preformatted": {
+        "typography": {
+          "fontSizes": [],
+          "customFontSize": false
+        }
       }
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "typography": {
+      "fontFamilies": [
+        { 
+          "fontFamily": "Rubik, sans-serif", 
+          "slug": "u-rubik",
+          "name": "Udemy Rubik" 
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.75rem", "name": "Small" },
+        { "slug": "medium", "size": "1.25rem", "name": "Medium" },
+        { "slug": "large", "size": "2.25rem", "name": "Large" },
+        { "slug": "x-large", "size": "3rem", "name": "Extra Large" },
+        { "slug": "gigantic", "size": "3.75rem", "name": "Gigantic" }
+      ],
+      "lineHeight": true,
+      "dropCap": true,
+      "fontWeight": true,
+      "fontStyle": true,
+      "textTransform": true,
+      "letterSpacing": true,
+      "textDecoration": true
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1100px"
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "units": [
+        "px", "rem", "vh", "vw", "%"
+      ],
+      "blockGap": true
     }
-  }
+  },
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--u-gray-700)",
+      "background": "var(--wp--preset--color--u-white)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--u-primary)"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "gradient": "var(--wp--preset--gradient--u-summer-dog)"
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "width": "2px",
+          "radius": "10px",
+          "style": "solid",
+          "color": "var(--wp--preset--color--u-primary)"
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--u-pacifico)"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--u-rubik)",
+      "fontSize": "16px",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "lineHeight": "inherit",
+      "textDecoration": "none",
+      "textTransform": "none"
+    },
+    "spacing": {
+      "margin": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "blockGap": "4rem"
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "full-width-page",
+      "title": "Full Width Page",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
 }
