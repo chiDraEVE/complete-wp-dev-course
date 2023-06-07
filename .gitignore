@@ -6,6 +6,7 @@
 /*
 !.gitignore
 !*.sql
+!*.zip
 !WordPress++Development+Lecture+Notes.pdf
 !test.php
 !assets/
