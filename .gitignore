@@ -29,3 +29,6 @@ idea/
 # Exclude node_modules and vendor directories
 node_modules/
 vendor/
+
+# Include Getting Started with React
+!starting-with-react/
