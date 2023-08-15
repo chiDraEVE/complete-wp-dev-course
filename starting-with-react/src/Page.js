@@ -13,4 +13,4 @@ export default function Page() {
     )
 }
 
-const age = 10
+// const age = 10
