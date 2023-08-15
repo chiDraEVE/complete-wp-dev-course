@@ -24,7 +24,7 @@ idea/
 
 # Exclude specific plugins in wp-content/plugins
 /wp-content/plugins/*
-!/wp-content/plugins/your-plugin/
+!/wp-content/plugins/udemy-plus/
 
 # Exclude node_modules and vendor directories
 node_modules/
