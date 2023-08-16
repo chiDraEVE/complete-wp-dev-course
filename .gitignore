@@ -29,6 +29,7 @@ idea/
 # Exclude node_modules and vendor directories
 node_modules/
 vendor/
+package-lock.json
 
 # Include Getting Started with React
 !starting-with-react/
