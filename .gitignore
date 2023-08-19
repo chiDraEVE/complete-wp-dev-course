@@ -33,3 +33,5 @@ package-lock.json
 
 # Include Getting Started with React
 !starting-with-react/
+# Include solution-code
+!solution-code
