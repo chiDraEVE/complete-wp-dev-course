@@ -1,23 +1,23 @@
 <?php
 
-function up_page_header_render_cb($atts): string {
-    $heading = esc_html($atts['content']);
+function up_page_header_render_cb($atts) {
+  $heading = esc_html($atts['content']);
 
-    if($atts['showCategory']) {
-        $heading = get_the_archive_title();
-    }
+  if($atts['showCategory']) {
+    $heading = get_the_archive_title();
+  }
 
-    ob_start();
-    ?>
-    <div class="wp-block-udemy-plus-page-header">
-        <div class="inner-page-header">
-            <h1><?php echo $heading; ?></h1>
-        </div>
+  ob_start();
+  ?>
+  <div class="wp-block-udemy-plus-page-header">
+    <div class="inner-page-header">
+      <h1><?php echo $heading; ?></h1>
     </div>
-    <?php
+  </div>
+  <?php
 
-    $output = ob_get_contents();
-    ob_end_clean();
+  $output = ob_get_contents();
+  ob_end_clean();
 
-    return $output;
+  return $output;
 }

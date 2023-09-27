@@ -8,7 +8,7 @@
   "keywords": ["search form"],
   "version": "1",
   "textdomain": "udemy-plus",
-  "editorScript": "file:./index.js",
+  "editorScript": "file:./index.js", 
   "attributes": {
     "bgColor": {
       "type": "string",
